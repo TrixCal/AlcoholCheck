@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AlcoholCheck.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <DatePicker x:Name="Inp_birthday"
+                    MinimumDate="01/01/1920"
+                    MaximumDate="01/01/2050"
+                    Date="01/01/2020" />
+        <Label Text="Verify Date"
+               x:Name="Lbl_verify"/>
+        <Button x:Name="Btn_calc"
+                Text="Click to Verify"
+                Clicked="Btn_calculate"/>
+    </StackLayout>
+
+</ContentPage>
